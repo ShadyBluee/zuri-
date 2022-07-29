@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grid</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+
+		main{
+			display: grid;
+			grid-template-columns: 50%;
+			line-height: 1.9em;
+			height: 100vh;
+			color: white;
+			align-content: end;
+			justify-content: center;
+			
+		}
+
+		.bottom{
+			display: grid;
+			grid-template-rows: repeat(2, 1fr);
+			grid-template-areas: "left right";
+
+		}
+
+		.left{
+			grid-area: left;
+			background: #3d998a;
+			padding: 10px;
+		}
+
+		.right{
+			grid-area: right;
+			background: #2eb1a1;
+			padding: 10px;
+		}
+
+		.top{
+			background: #b8edff;
+			padding: 2.4em 3.4em 0 3.4em;
+		}
+
+		button{
+			padding: 4px;
+			border-radius: 25px;
+			color: black;
+			cursor: pointer;
+		}
+
+		span{
+			font-size: 30px;
+		}
+
+		#top{
+			color: black;
+			padding-bottom: 8px;
+		}
+
+		h1,h2,h4,h5,h6{
+			color: hsla(0, 0%, 60%, 0.75);
+			padding-bottom: 0.5em;
+		}
+
+		h3{
+		color: hsla(0, 0%, 75%, 0.75);
+		padding-bottom: 0.5em;
+		}
+
+		.right h3{
+		color: hsla(0, 0%, 89%, 0.75);
+		padding-bottom: 0.5em;
+		}
+	</style>
+</head>
+<body>
+<main>
+	<div class="top">
+		<h1>Join Our Community...</h1>
+		<p style="color: black;"> 30-days Hassle Free Money Back Guarantee</p>
+		<p id="top">Gain access to Free Library of Tutorials along Expert code Reviews</p>
+	</div>
+	<div class="bottom">
+		<div class="left">
+			<h3>Monthly Subscription </h3>
+			<p><span>$29</span> <i> Per Month</i></p>
+			<p>Full access for less than $1 per day</p>
+			<button>Sign up</button>
+		</div>
+		<div class="right">
+			<h3>Why Us</h3>
+				<ul>
+					<li>Tutorials by Industries Expert</li>
+					<li>Peer and Expert code Review</li>
+					<li>Coding Exercises</li>
+					<li>Access to our GitHub Repos</li>
+					<li>Community Forum</li>
+					<li>Flash Card Decks</li>
+					<li>New videos Every Week</li>
+				</ul>
+		</div>
+	</div>
+</main>
+</body>
+</html>
