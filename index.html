@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Zuri Flex Project</title>
+</head>
+<style type="text/css">
+@import url("https://fonts.google.com/specimen/Lexend+Deca");
+@import url("https://fonts.google.com/specimen/Big+Shoulders+Display");
+	*{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body{
+		background-color: grey;
+		font-size: 15px;
+		font-family: Lexend-Deca;
+	}
+
+	main/* Use this to center */{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100vh;
+		flex-direction: column; 
+	}
+
+
+	.top{
+		background-color: hsl(0, 0%, 95%);
+		padding: 3.4em;
+		width: 50%;
+	}
+
+	.top h1{
+		color: hsla(0, 0%, 70%, 0.75);
+		padding-bottom: 1em;
+		font-family: [Big Shoulders Display];
+	}
+
+	.top p{
+		color: hsl(31, 77%, 52%);
+	}
+
+	#top{
+		color: hsl(0, 0%, 59%, 0.75);
+		padding-top: 1em;
+	}
+
+	.below{
+		display: flex;
+		width: 50%;
+		line-height: 1.9em;
+	}
+
+	.left{
+		background-color: hsl(179, 100%, 13%);
+		padding: 2em;
+		width: 100%;
+		color: hsla(0, 0%, 100%, 0.75);
+	}
+
+	.right{
+		background-color:  hsl(184, 100%, 22%);
+		padding: 2em;
+		width: 100%;
+		color: hsla(0, 0%, 100%, 0.75);
+
+	}
+
+	span{
+		font-size: 30px;
+	}
+
+	button{
+		background-color: hsl(31, 77%, 52%);
+		color: white;
+		border: 1px solid white;
+		padding: 0.2em;
+		margin-top: 0.2em;
+		cursor: pointer;
+	}
+
+</style>
+<body>	
+	<main>
+		<div class="top">
+			<h1>Join Our Community...</h1>
+			<p> 30-days Hassle Free Money Back Guarantee</p>
+			<p id="top">Gain access to Free Library of Tutorials along Expert code Reviews</p>
+		</div>
+		<div class="below">
+			<div class="left">
+				<h3>Monthly Subscription </h3>
+				<p><span>$29</span> <i> Per Month</i></p>
+				<p>Full access for less than $1 per day</p>
+				<button>Sign up</button>
+			</div>
+			<div class="right">
+				<h3>Why Us</h3>
+				<ul>
+					<li>Tutorials by Industries Expert</li>
+					<li>Peer and Expert code Review</li>
+					<li>Coding Exercises</li>
+					<li>Access to our GitHub Repos</li>
+					<li>Community Forum</li>
+					<li>Flash Card Decks</li>
+					<li>New videos Every Week</li>
+				</ul>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
