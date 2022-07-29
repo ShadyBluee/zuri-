@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>New School Haven</title>
+
+	<style type="text/css">
+		body, html{
+			height: 100vh;
+		}
+
+		body{
+			margin: 0 ;
+		}
+
+		body{
+			display: grid;
+			grid-template-columns: 100%;
+			grid-template-rows: repeat(8, auto);
+			grid-template-areas:
+			"nav" 
+			"sidebar"
+			"content" 
+			"section1" 
+			"section2" 
+			"section3" 
+			"content2" 
+			"footer" ;
+			row-gap: 10px;
+		}
+
+		aside{
+			grid-area: sidebar;
+			background:  #8B2030;
+		}
+
+		nav{
+			grid-area: nav;
+			background: #FE4C6F;
+		}
+
+		ul li{
+			display: inline-flex;
+			float: right;
+			margin: 0;
+			padding-right: 10px;
+
+		}
+
+		a{
+			color: white;
+			text-decoration: none;
+			font-size: 25px;
+
+		}
+
+		a:hover{
+			border-bottom: 3px solid black;
+			transition-duration: 700ms;
+		}
+
+		main{
+			grid-area: content;
+			color: black;
+			text-align: center;
+
+		}
+
+		Section{
+			color: white;
+			font-style: bolder;
+			text-align: center;
+		} 
+		aside{
+			color: white;
+			font-style: bolder;
+		}
+
+
+		#sect1{
+			grid-area: section1;
+			background: #FE4C6F;
+		}
+
+		#sect2{
+			grid-area: section2;
+			background: #531319;
+		}
+
+		#sect3{
+			grid-area: section3;
+			background: #8B2030;
+		}
+
+		#content{
+			grid-area: content2;
+			background: #531319;
+			color: white;
+			text-align: center;
+		}
+
+		footer{
+			grid-area: footer;
+			background: #FE4C6F;
+			color: white;
+			text-align: center;
+			padding-top: 25px;
+		}
+
+		@media (min-width: 786px){
+			body{
+			display: grid;
+			grid-template-columns: auto 28% 28% 28%;
+			grid-template-rows: 8% 25% 25% 30% auto;
+			grid-template-areas: 
+			"sidebar nav nav nav" 
+			"sidebar content content content" 
+			"sidebar section1 section2 section3" 
+			"sidebar content2 content2 content2" 
+			"footer footer footer footer";
+			grid-gap: 10px 10px;
+			}
+
+		#content, section{
+			text-align: center;
+			color: white;
+		}
+
+		nav{
+			grid-area: nav;
+			background: #FE4C6F;
+		}
+
+		ul li{
+			display: inline-flex;
+			float: right;
+			margin: 0px 5px 0 5px;
+			padding-right: 15px;
+
+		}
+
+		a{
+			color: white;
+			text-decoration: none;
+			font-size: 25px;
+		}
+
+		a:hover{
+			border-bottom: 3px solid black;
+			transition-duration: 700ms;
+		}
+
+		}
+
+		@media (max-width: 450px){
+			body{
+			display: grid;
+			grid-template-columns: 100%;
+			grid-template-rows:  7% 14% 14% 14% 14% 14% 14%;
+			grid-template-areas:
+			"nav" 
+			"sidebar"
+			"content" 
+			"section1" 
+			"section2" 
+			"section3" 
+			"content2" 
+			"footer" ;
+			row-gap: 10px;
+		}
+
+		nav{
+			grid-area: nav;
+			background: #FE4C6F;
+		}
+
+		ul li{
+			display: inline-flex;
+			float: right;
+			margin: 0;
+			padding-right: 15px;
+
+		}
+
+		a{
+			color: white;
+			text-decoration: none;
+			font-size: 20px;
+			padding: 0;
+		}
+
+		a:hover{
+			border-bottom: 3px solid black;
+			transition-duration: 700ms;
+		}
+
+		}
+
+		@media (max-width: 350px){
+			body{
+			display: grid;
+			grid-template-columns: 100%;
+			grid-template-rows:  5% 14% 14% 14% 14% 14% 14%;
+			grid-template-areas:
+			"nav" 
+			"sidebar"
+			"content" 
+			"section1" 
+			"section2" 
+			"section3" 
+			"content2" 
+			"footer" ;
+			row-gap: 10px;
+		}
+
+		nav{
+			grid-area: nav;
+			background: #FE4C6F;
+		}
+
+		ul li{
+			display: inline-flex;
+			float: right;
+			margin: 0;
+			padding-right: 15px;
+
+		}
+
+		a{
+			color: white;
+			text-decoration: none;
+			font-size: 12px;
+			padding: 0;
+		}
+
+		a:hover{
+			border-bottom: 3px solid black;
+			transition-duration: 700ms;
+		}
+
+		}
+		}
+
+
+	</style>
+</head>
+<body>
+		<aside> SideBar</aside>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Search</a></li>
+				<li><a href="#">Dialogue</a></li>
+			</ul>
+		</nav>
+		<main> CONTENT</main>
+		<section id="sect1">SECTION ONE</section>
+		<section id="sect2"> SECTION TWO</section>
+		<section id="sect3">SECTION THREE</section>
+		<main id="content">CONTENT</main>
+		<footer>FOOTER</footer>
+</body>
+</html>
