@@ -29,7 +29,7 @@ main{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	height: 100vh;
-	width: 50vw;
+	width: 75vw;
 	column-gap: 16px;
 	margin: 8px;
 	align-content: center;
@@ -59,10 +59,9 @@ main{
 
 .top{
 	background: hsl(248, 32%, 49%);
-	padding: 8px 0 8px 0;
 	border-radius: 3px;
 	margin-bottom: 12px;
-	padding: 12px 30px 12px 60px;
+	padding: 12px 0px 12px 0px;
 	box-shadow: 0 3px 8px hsl(246, 25%, 77%);
 	color: white;
 
@@ -102,44 +101,94 @@ input{
 
 #para{
 	font-size: 8px;
+	margin-bottom: -12px;
 }
 
 #para span{
 	cursor: pointer;
 }
 
-@media only screen and(min-width: 375px){
-	body{
-		display: flex;
-		flex-direction: row;
-		flex: 0 1 auto;
-		width: 100%;
-	}
-	.main{
-		display: flex;
-		flex-direction: row;
-		flex: 0 3 auto;
+@media (max-width: 1268px){
+	.top p{
+		font-size: 8px;
 	}
 
-
+	main{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		height: 100vh;
+		width: 75vw;
+		column-gap: 16px;
+		margin: 8px;
+		align-content: center;
+		justify-content: space-around;
+	}
 }
 
-@media only screen and(min-width: 1440px){
-	body{
-		display: flex;
-		flex-direction: row;
-		flex: 0 1 auto;
+@media (max-width: 977px){
+	.top span{
+		font-weight: bold;
+		font-size: 8px;
+	}
+
+	.left h1{
+		font-size: 38px;
+		padding-bottom: 0.3em;
+	}
+
+	.left p{
+		font-size: 11px;
+		line-height: 1.9em;
 		width: 100%;
 	}
-	.main{
-		display: flex;
-		flex-direction: row;
-		flex: 0 3 auto;
-	}
-
-	
 }
 
+@media (max-width: 999px){
+	.left h1{
+		font-size: 32px;
+		padding-bottom: 0.3em;
+		width: 100%;
+	}
+
+	.left p{
+		font-size: 11px;
+		line-height: 1.9em;
+		width: 100%;
+	}
+
+	main{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		height: 100vh;
+		width: 75vw;
+		column-gap: 16px;
+		margin: 8px;
+		align-content: center;
+		justify-content: space-around;
+	}
+
+	.top p{
+		font-size: 8px;
+	}
+
+	.top span{
+		font-weight: bolder;
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 375px){
+	main{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		height: 100vh;
+		width: 100vw;
+		column-gap: 16px;
+		margin: 8px;
+		align-content: center;
+		justify-content: space-around;
+	}
+}
 
 	</style>
 </head>
