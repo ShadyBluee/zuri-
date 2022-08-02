@@ -8,6 +8,10 @@
 <style type="text/css">
 @import url("https://fonts.google.com/specimen/Lexend+Deca");
 @import url("https://fonts.google.com/specimen/Big+Shoulders+Display");
+	<style type="text/css">
+@import url("https://fonts.google.com/specimen/Lexend+Deca");
+@import url("https://fonts.google.com/specimen/Big+Shoulders+Display");
+@import url(https://fonts.google.com/specimen/Poppins);
 	*{
 		list-style: none;
 		margin: 0;
@@ -18,7 +22,7 @@
 	body{
 		background-color: grey;
 		font-size: 15px;
-		font-family: Lexend-Deca;
+		font-family: 'Lexend Deca';
 	}
 
 	main/* Use this to center */{
@@ -32,14 +36,14 @@
 
 	.top{
 		background-color: hsl(0, 0%, 95%);
-		padding: 3.4em;
+		padding: 18px;
 		width: 50%;
 	}
 
 	.top h1{
 		color: hsla(0, 0%, 70%, 0.75);
 		padding-bottom: 1em;
-		font-family: [Big Shoulders Display];
+		font-family: poppins;
 	}
 
 	.top p{
@@ -84,6 +88,71 @@
 		margin-top: 0.2em;
 		cursor: pointer;
 	}
+
+	@media (max-width: 1440px){
+		.below{
+			width: 80%;
+		}
+
+		.top{
+			width: 80%;
+		}
+	}
+
+	@media (max-width: 798px){
+
+		main/* Use this to center */{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			flex-direction: column;
+		}
+
+		.below{
+			display: flex;
+			width: 80%;
+			line-height: 1.9em;
+			flex-direction: column;
+		}
+
+		.top{
+		background-color: hsl(0, 0%, 95%);
+		padding: 3.4em;
+		width: 80%;
+	}
+
+
+	}
+
+	@media (max-width: 414px){
+
+		main/* Use this to center */{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			flex-direction: column;
+			font-size: 12px;
+		}
+
+		.below{
+			display: flex;
+			width: 80%;
+			line-height: 1.9em;
+			flex-direction: column;
+		}
+
+		.top{
+		background-color: hsl(0, 0%, 95%);
+		padding: 3.4em;
+		width: 80%;
+	}
+
+
+
+	}
+
 
 </style>
 <body>	
