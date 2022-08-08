@@ -1,0 +1,265 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: Averta;
+}
+
+a{
+	color: red;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+#top-img{
+	justify-self: center;
+	align-self: center;
+	margin-top: 16px;
+}
+
+.top-sect{
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	width: auto;
+	height: 100vh;
+	row-gap: 2em;
+	justify-content:center;
+	align-items: center;
+	background-image: url(https://zuri.team/img/hero-bg.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.top-sect h2{
+	margin-bottom: 24px;
+	font-size: 38px;
+	font-weight: bold;
+}
+
+.top-sect p{
+	width: 40%;
+	line-height: 2em;
+
+}
+
+#top-content{
+	justify-self:;
+}
+
+.btn{
+	margin-top: 5%;
+	margin-bottom: 10%;
+	justify-self: center;
+}
+.btn a button{
+	border: 1px solid red;
+	padding: 14px 36px;
+	background: none;
+	font-size: 16px;
+}
+
+#left-btn button{
+	background: red;
+	color: white;
+	margin: 0px 14px 0px 14px;
+}
+
+#left-btn button:hover{
+	background: none;
+	color: red;
+}
+
+#right-btn button{
+	margin: 0px 14px 0px 14px;
+}
+
+.down-sect{
+	display: grid;
+	grid-template-rows: repeat(1, 1fr);
+	justify-items: center;
+	align-items: start;
+}
+
+#top h3{
+	color: red;
+	text-align: center;
+	font-family: "segoe ui";
+	font-weight: normal;
+	margin: 15%;
+}
+
+#top p{
+	text-align: center;
+	font-size: 25px;
+	font-family: "Apple color emoji";
+}
+
+#down{
+	display: flex;
+	width: 80%;
+	gap: 3em;
+	text-align: justify;
+}
+
+#down p{
+	margin-bottom: 16px;
+	color: #6c757d;
+	font-size: 1rem;
+	font-weight: bold;
+	line-height: 24px;
+}
+
+footer{
+	width: 90%;
+}
+footer #foot{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-areas:
+	"logo links contact follow" 
+	"rule rule rule rule"
+	"copy copy copy copy";
+	margin-top: 15%;
+	justify-content: space-around;
+}
+
+#logo{
+	grid-area: logo;
+}
+
+#links{
+	grid-area: links;
+}
+
+#Contact{
+	grid-area: contact;
+}
+
+#Follow{
+	grid-area: follow;
+	justify-self: end;
+}
+
+#rule{
+	grid-area: rule;
+	margin-top: 24px;
+}
+
+#copy{
+	grid-area: copy;
+	justify-self: center;
+	font-weight: normal;
+}
+
+@media(max-width: 1440px) and (min-width: 100px){
+	#top h3{
+		color: red;
+		text-align: center;
+		font-family: "segoe ui";
+		font-weight: normal;
+		margin: 15%;
+	}
+}
+
+@media (max-width: 1200px){
+	#top-content p{
+		width: 70%;
+	}
+
+	#top p{
+		text-align: center;
+		font-size: 25px;
+		font-family: "Apple color emoji";
+	}
+}
+
+@media (max-width: 621px){
+	#down{
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		gap: 3em;
+		text-align: justify;
+	}
+
+}
+
+@media (max-width: 527px){
+	.btn{
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+	}
+
+	#left-btn{
+		margin: 10px;
+	}
+
+	#right-btn{
+		margin-top: 10px;
+	}
+
+	#top-content p{
+		width: 65%;
+	}
+
+	footer{
+		width: 90%;
+	}
+
+	footer #foot{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		row-gap: 4em;
+		grid-template-areas:
+		"logo links" 
+		"contact follow" 
+		"rule rule"
+		"copy copy";
+		margin-top: 15%;
+		justify-content: space-around;
+	}
+
+	#logo{
+		grid-area: logo;
+	}
+
+	#links{
+		grid-area: links;
+		justify-self: end;
+	}
+
+	#Contact{
+		grid-area: contact;
+	}
+
+	#Follow{
+		grid-area: follow;
+		justify-self: end;
+	}
+
+	#rule{
+		grid-area: rule;
+		margin-top: 24px;
+	}
+
+	#copy{
+		grid-area: copy;
+		justify-self: center;
+		font-weight: bold;
+	}
+
+}
+
